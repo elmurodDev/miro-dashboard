@@ -9,7 +9,8 @@ const ConnectCard = ({img, title, text, isActive = false}) => {
       <CardContent className={"flex justify-between items-center py-6"}>
         <div className={"flex gap-8 items-center"}>
           <span>
-            <TbMail className={"w-20 h-20"} />
+            {/*<TbMail className={"w-20 h-20"} />*/}
+            {img}
           </span>
           <div className={"flex flex-col gap-2"}>
             <div className={"flex items-center gap-2"}>
