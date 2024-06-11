@@ -8,7 +8,7 @@ const Page = () => {
 
   const cardArray = [
     {
-      img: <Image src={"/envelope-line-icon.svg"} width={40} height={40} alt={"Google sheet"} />,
+      img: <Image src={"/envelope-line-icon.svg"} width={40} height={40} alt={"Email"} />,
       title: 'Email',
       text: 'Recive an email every time a user submit their answer',
       isActive: true
@@ -22,7 +22,7 @@ const Page = () => {
     },
 
     {
-      img: <Image src={"/microsoft-excel-icon.svg"} width={40} height={40} alt={"Google sheet"} />,
+      img: <Image src={"/microsoft-excel-icon.svg"} width={40} height={40} alt={"Excel"} />,
       title: 'Excel',
       text: 'Send your typeform responses to Excel Online. Turn feedback into graphs, support quries into workflows, and much more.',
       isActive: false
