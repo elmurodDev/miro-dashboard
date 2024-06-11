@@ -1,19 +1,35 @@
 "use client"
 import React from 'react';
-import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import {TbEye, TbUserCircle} from "react-icons/tb";
 import NavbarLink from "@/components/common/NavbarLink";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList, BreadcrumbPage,
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb";
 
 const Header = () => {
   return (
     <nav className={"flex justify-between items-center px-6 border-b border-secondary bg-background"}>
       <div className={"flex items-center gap-1"}>
-        <span className={"text-neutral-500"}>My workspace /</span><span>My new form</span>
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">My Workspace</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>My New Form</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
       </div>
       <div className={"actions flex items-center gap-2 "}>
-        <NavbarLink link={"/"} name={"Create"} />
-        <NavbarLink link={"connect"} name={"Connect"} />
+        <NavbarLink link={"/create"} name={"Create"} />
+        <NavbarLink link={"/"} name={"Connect"} />
         <NavbarLink link={"share"} name={"Share"} />
         <NavbarLink link={"/result"} name={"Results"} />
       </div>

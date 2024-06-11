@@ -91,7 +91,7 @@ const Page = () => {
           </div>
 
           <div className={"grid grid-cols-12 mt-5 gap-6"}>
-            <Card className="col-span-6">
+            <Card className="col-span-12 lg:col-span-6">
               <CardHeader>
                 <CardTitle>Overview</CardTitle>
               </CardHeader>
@@ -99,7 +99,7 @@ const Page = () => {
                 <Overview/>
               </CardContent>
             </Card>
-            <Card x-chunk="dashboard-05-chunk-3" className={"col-span-6"}>
+            <Card x-chunk="dashboard-05-chunk-3" className={"col-span-12 lg:col-span-6"}>
               <CardContent className={"p-0"}>
                 <Table className={"text-xs"}>
                   <TableHeader>
