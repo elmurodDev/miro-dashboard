@@ -60,6 +60,10 @@
         @apply bg-background text-foreground;
     }
 
+    .icon-xs {
+        @apply w-4 h-4;
+    }
+
     .icon-sm {
         @apply w-5 h-5;
     }
